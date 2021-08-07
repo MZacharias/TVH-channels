@@ -1,3 +1,5 @@
 #EXTM3U
-#EXTINF:-1 tvg-name="NBC IPTV" tvg-id="NBC2" group-title="IPTV" tvg-logo="https://raw.githubusercontent.com/jnk22/kodinerds-iptv/master/logos/tv/skynews.png",NBC2
-pipe:///volume1/@appstore/ffmpeg/bin/ffmpeg -i https://livevideo01.wkyc.com/hls/live/2015504/newscasts/live.m3u8 -vcodec copy -acodec copy -mpegts_service_type advanced_codec_digital_hdtv -f mpegts pipe:1
+#EXTINF:-1 tvg-name="QVC IPTV" tvg-id="QVC" group-title="IPTV" tvg-logo="https://raw.githubusercontent.com/jnk22/kodinerds-iptv/master/logos/tv/qvc.png",QVC
+pipe:///volume1/@appstore/ffmpeg/bin/ffmpeg -i https://lsqvc1uscln-lh.akamaihd.net/i/lsqvc1uscln_01@809410/master.m3u8 -vcodec copy -acodec copy -mpegts_service_type advanced_codec_digital_hdtv -f mpegts pipe:1
+#EXTINF:-1 tvg-name="NRBTV IPTV" tvg-id="NRBTV" group-title="IPTV" tvg-logo="https://nrbtv.org/wp-content/uploads/2020/06/nrbtv-logo-dark-no-tagline.svg",NRBTV
+pipe:///volume1/@appstore/ffmpeg/bin/ffmpeg -i https://uni10rtmp.tulix.tv/nrbtvlive/nrbtvlive.stream/chunklist_w1145930086.m3u8 -vcodec copy -acodec copy -mpegts_service_type advanced_codec_digital_hdtv -f mpegts pipe:1
