@@ -2,4 +2,4 @@
 #EXTINF:-1 tvg-name="QVC IPTV" tvg-id="QVC" group-title="IPTV" tvg-logo="https://raw.githubusercontent.com/jnk22/kodinerds-iptv/master/logos/tv/qvc.png",QVC
 pipe:///volume1/@appstore/ffmpeg/bin/ffmpeg -i https://lsqvc1uscln-lh.akamaihd.net/i/lsqvc1uscln_01@809410/master.m3u8 -vcodec copy -acodec copy -mpegts_service_type advanced_codec_digital_hdtv -f mpegts pipe:1
 #EXTINF:-1 tvg-name="NRBTV IPTV" tvg-id="NRBTV" group-title="IPTV" tvg-logo="https://nrbtv.org/wp-content/uploads/2020/06/nrbtv-logo-dark-no-tagline.svg",NRBTV
-pipe:///volume1/@appstore/ffmpeg/bin/ffmpeg -i https://uni10rtmp.tulix.tv/nrbtvlive/nrbtvlive.stream/chunklist_w1145930086.m3u8 -vcodec copy -acodec copy -mpegts_service_type advanced_codec_digital_hdtv -f mpegts pipe:1
+pipe:///volume1/@appstore/ffmpeg/bin/ffmpeg -timeout 100 -reconnect 1 -reconnect_streamed 1 -reconnect_delay_max 4294 -i http://uni6rtmp.tulix.tv/nrbnetwork/myStream.sdp/playlist.m3u8 -loglevel debug -vcodec copy -acodec copy -mpegts_service_type advanced_codec_digital_hdtv -f mpegts pipe:1
