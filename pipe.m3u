@@ -3,3 +3,5 @@
 pipe:///volume1/@appstore/python38/bin/streamlink --stdout --default-stream 720p,best --url https://www.youtube.com/watch?v=UqFzfqlb60g/live
 #EXTINF:-1 tvg-name="NRBTV IPTV" tvg-id="NRBTV" group-title="IPTV" tvg-logo="https://nrbtv.org/wp-content/uploads/2020/06/nrbtv-logo-dark-no-tagline.svg",NRBTV
 pipe:///volume1/@appstore/python38/bin/streamlink --stdout --default-stream best --url http://uni6rtmp.tulix.tv/nrbnetwork/myStream.sdp/playlist.m3u8
+#EXTINF:-1 tvg-name="HOPE IPTV" tvg-id="HOPE" group-title="IPTV",HOPE
+pipe:///volume1/@appstore/python38/bin/streamlink --stdout --default-stream best --url https://hcintlinc.mmdlive.lldns.net/hcintlinc/9649814c00e54c6eabc8d12d3cddd26c/manifest.m3u8
