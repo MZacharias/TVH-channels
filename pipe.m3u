@@ -9,3 +9,5 @@ pipe:///volume1/@appstore/python38/bin/streamlink --stdout --default-stream 720p
 pipe:///volume1/@appstore/python38/bin/streamlink --stdout --default-stream 720p,best --url https://www.youtube.com/watch?v=21X5lGlDOfg/live
 #EXTINF:-1 tvg-name="Peppa IPTV" tvg-id="Peppa" group-title="IPTV",Peppa
 pipe:///volume1/@appstore/python38/bin/streamlink --stdout --default-stream 720p,best --url https://www.youtube.com/watch?v=wJ_P8XvobIQ/live
+#EXTINF:-1 tvg-name="XMAS-Radio" tvg-id="XMAS-Radio" group-title="Radio",XMAS-Radio
+pipe:///volume1/@appstore/python38/bin/streamlink --stdout --default-stream 720p,best --url http://stream.revma.ihrhls.com/zc4596/hls.m3u8
